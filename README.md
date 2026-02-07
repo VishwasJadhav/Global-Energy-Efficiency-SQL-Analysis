@@ -7,12 +7,9 @@ The analysis focuses on identifying **energy efficiency and emission intensity**
 
 ---
 
-## Problem Definition (Analytical Perspective)
+## Analytical Context
 
 Traditional energy and emission analysis relies heavily on **absolute values**, which leads to misleading conclusions when comparing countries with vastly different population sizes and economic scales.
-
-### Key Analytical Gap
-> How can energy emissions be evaluated **fairly and comparably** across countries while accounting for population size and economic output?
 
 ---
 
