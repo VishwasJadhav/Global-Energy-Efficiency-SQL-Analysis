@@ -1,7 +1,7 @@
 # 🌍 World Wide Energy Consumption Analysis (SQL Analytics Project)
 
 ## Project Overview
-This project is a relational SQL-based analytics solution designed to evaluate **global energy consumption, production, emissions, GDP, and population data** at a country and year level.
+This project is a relational SQL-based analytics solution designed to evaluate **Global Energy Consumption, Production, Emissions, GDP, and Population Data** at a country and year level.
 
 The analysis focuses on identifying **energy efficiency and emission intensity** by integrating economic and demographic indicators, enabling normalized comparisons across countries of different sizes and development levels.
 
@@ -10,7 +10,7 @@ The analysis focuses on identifying **energy efficiency and emission intensity**
 ## Analytical Context
 Traditional energy and emission analysis often relies on absolute values, which leads to misleading conclusions when comparing countries with vastly different population sizes and economic scales.
 
-This project addresses this analytical gap by normalizing energy and emission metrics using **population** and **GDP**, enabling fair, comparable, and decision-relevant insights across countries.
+This project addresses this analytical gap by normalizing energy and emission metrics using **Population** and **GDP**, enabling fair, comparable, and decision-relevant insights across countries.
 
 ---
 
@@ -29,25 +29,18 @@ This project addresses this analytical gap by normalizing energy and emission me
 ## Dataset Description
 
 The analysis is based on country-level, year-wise datasets including:
-- Energy production by source
-- Carbon emissions by energy type
-- Gross Domestic Product (GDP)
-- Population statistics
+- `Country` - Country names
+- `Population` - Population statistics
+- `Production` - Energy production by source
+- `Consumption` - Energy consumption by source
+- `Emission` - Carbon emissions by energy type
+- `GDP` - Gross Domestic Product (GDP)
 
 All datasets are integrated using a common country dimension to ensure consistent aggregation and analysis.
 
 ---
 
-## Tools & Technologies
-
-- SQL (MySQL / PostgreSQL compatible)
-- Relational database design
-- Joins, aggregations, and subqueries
-- KPI engineering and normalization techniques
-
----
-
-## Repository Structure & SQL Access
+## Codebase Overview
 
 All SQL code used in this analysis is available in the `sql/` directory:
 
@@ -62,6 +55,15 @@ All SQL code used in this analysis is available in the `sql/` directory:
   - Country-level and time-series comparisons
 
 All queries are written to be modular, readable, and reproducible.
+
+---
+
+## Tools & Technologies
+
+- SQL (MySQL)
+- Relational database design
+- Joins, aggregations, window functions and subqueries
+- KPI engineering and normalization techniques
 
 ---
 
@@ -109,4 +111,4 @@ All queries are written to be modular, readable, and reproducible.
 - Absolute metrics alone are insufficient for evaluating sustainability performance
 - Well-documented, modular SQL queries enhance reproducibility and reviewability
 
---
+---
