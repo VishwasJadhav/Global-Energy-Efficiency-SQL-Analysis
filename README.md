@@ -8,75 +8,118 @@ The analysis focuses on identifying **energy efficiency and emission intensity**
 ---
 
 ## Analytical Context
+Traditional energy and emission analysis often relies on absolute values, which leads to misleading conclusions when comparing countries with vastly different population sizes and economic scales.
 
-Traditional energy and emission analysis relies heavily on **absolute values**, which leads to misleading conclusions when comparing countries with vastly different population sizes and economic scales.
+This project addresses this analytical gap by normalizing energy and emission metrics using **population** and **GDP**, enabling fair, comparable, and decision-relevant insights across countries.
 
 ---
 
-## Objectives
+## Project Objectives
 
 - Design a normalized relational database for global energy analytics
 - Integrate energy production, emission, GDP, and population datasets
 - Perform country-level and time-series analysis
-- Create derived metrics such as:
+- Derive key performance indicators such as:
   - Per-capita emissions
   - GDP-normalized emission intensity
-- Identify inefficient energy systems with high emissions relative to economic output
+- Identify countries with economically inefficient energy systems
 
 ---
 
-## Data Model & Schema Design
+## Dataset Description
 
-The database consists of the following core entities:
-- **Country** (dimension table)
-- **Energy Production** (fact table)
-- **Energy Emissions** (fact table by energy type)
-- **GDP** (economic indicator table)
-- **Population** (demographic indicator table)
+The analysis is based on country-level, year-wise datasets including:
+- Energy production by source
+- Carbon emissions by energy type
+- Gross Domestic Product (GDP)
+- Population statistics
 
-All fact tables are linked via a common country dimension, ensuring consistent aggregation and join logic.
+All datasets are integrated using a common country dimension to ensure consistent aggregation and analysis.
 
 ---
 
-## Analytical Techniques Used
+## Tools & Technologies
 
-- Multi-table joins
-- Aggregations and grouping
-- Time-series trend analysis
-- Normalization using GDP and population
-- Emission intensity calculations
-- Comparative country ranking logic
+- SQL (MySQL / PostgreSQL compatible)
+- Relational database design
+- Joins, aggregations, and subqueries
+- KPI engineering and normalization techniques
+
+---
+
+## Repository Structure & SQL Access
+
+All SQL code used in this analysis is available in the `sql/` directory:
+
+- **`schema.sql`**  
+  Defines the database schema, including table structures, data types, and primary/foreign key relationships.
+
+- **`analysis_queries.sql`**  
+  Contains analytical SQL queries mapped to business and analytical questions, including:
+  - Energy production and emission analysis
+  - Per-capita emission calculations
+  - GDP-normalized emission intensity metrics
+  - Country-level and time-series comparisons
+
+All queries are written to be modular, readable, and reproducible.
+
+---
+
+## Key Analysis Performed
+
+- Country-wise and year-wise emission analysis
+- Energy production versus emission comparison
+- Per-capita and GDP-normalized emission evaluation
+- Energy-type contribution to total emissions
+- Trend analysis across multiple years
 
 ---
 
 ## Key Findings
 
-- Absolute emission values mask inefficiencies; normalized metrics provide clearer insights
-- Several countries exhibit **high emissions per unit of GDP**, indicating low energy efficiency
-- Energy mix plays a critical role in emission intensity
-- Population-normalized analysis highlights disproportionate individual-level environmental impact
+- Absolute emission values often conceal inefficiencies; normalized metrics provide clearer insights
+- Several countries exhibit high emissions relative to their economic output
+- Energy mix significantly influences overall emission intensity
+- Population-normalized metrics reveal disproportionate per-capita environmental impact in certain regions
 
 ---
 
 ## Business & Policy Implications
 
-- Enables data-driven energy policy evaluation
-- Supports international sustainability benchmarking
-- Assists in identifying targets for clean energy transition
-- Provides quantitative backing for climate and infrastructure planning
+- Enables data-driven energy and climate policy evaluation
+- Supports cross-country sustainability benchmarking
+- Identifies targets for clean energy transition
+- Assists long-term energy infrastructure and planning decisions
 
 ---
 
 ## Recommendations
 
-- Shift policy evaluation from total emissions to **efficiency-based metrics**
-- Prioritize clean energy investment in high emission-intensity regions
-- Integrate economic productivity indicators into climate assessments
+- Shift analytical focus from total emissions to efficiency-based metrics
+- Prioritize cleaner energy investments in high emission-intensity regions
+- Incorporate GDP and population indicators into sustainability assessments
+- Use normalized KPIs for international energy performance comparisons
 
 ---
 
-## Tools & Technologies
-- SQL (MySQL)
-- Relational database design
-- Data normalization and KPI engineering
+## Key Technical Learnings
 
+- Normalized relational schema design improves analytical flexibility and accuracy
+- GDP- and population-based normalization is critical for fair energy analysis
+- Absolute metrics alone are insufficient for evaluating sustainability performance
+- Well-documented, modular SQL queries enhance reproducibility and reviewability
+
+---
+
+## Future Scope
+
+- Classification of renewable vs non-renewable energy sources
+- Advanced ranking using SQL window functions
+- Interactive dashboards using Power BI or Tableau
+- Predictive modeling for emission trends
+
+---
+
+## Author
+**Vishwas Jadhav**  
+Data Analyst | SQL | Energy & Sustainability Analytics
