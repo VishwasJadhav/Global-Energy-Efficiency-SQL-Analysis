@@ -51,10 +51,10 @@ All datasets are integrated using a common country dimension to ensure consisten
 
 All SQL code used in this analysis is available in the `sql/` directory:
 
-- **`schema.sql`(https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Anlaysis_Queries.sql)**  
+- **[schema.sql](https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Anlaysis_Queries.sql)**  
   Defines the database schema, including table structures, data types, and primary/foreign key relationships.
 
-- **`analysis_queries.sql`(https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Anlaysis_Queries.sql)**  
+- **[`analysis_queries.sql`](https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Anlaysis_Queries.sql)**  
   Contains analytical SQL queries mapped to business and analytical questions, including:
   - Energy production and emission analysis
   - Per-capita emission calculations
