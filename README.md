@@ -109,6 +109,6 @@ All queries are written to be modular, readable, and reproducible.
 - Normalized relational schema design improves analytical flexibility and accuracy
 - GDP- and population-based normalization is critical for fair energy analysis
 - Absolute metrics alone are insufficient for evaluating sustainability performance
-- Well-documented, modular SQL queries enhance reproducibility and reviewability
+- Well-documented, modular SQL queries enhance reproducibility and reviewability.
 
 ---
