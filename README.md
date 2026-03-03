@@ -54,9 +54,9 @@ All SQL code used in this analysis is available in the `sql/` directory:
   - GDP-normalized emission intensity metrics
   - Country-level and time-series comparisons
 
-- **[`Global Energy Efficiency.pptx`](https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Global%20Energy%20Efficiency.pptx)**
+- **[`Global Energy Efficiency.pptx`](https://github.com/VishwasJadhav/Global-Energy-Efficiency-SQL-Analysis/blob/main/Global%20Energy%20Efficiency.pptx)**  
   PPT File of the project.
-
+  
 All queries are written to be modular, readable, and reproducible.
 
 ---
