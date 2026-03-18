@@ -114,4 +114,3 @@ All queries are written to be modular, readable, and reproducible.
 - Absolute metrics alone are insufficient for evaluating sustainability performance
 - Well-documented, modular SQL queries enhance reproducibility and reviewability.
 
----
